@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phones</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="product.css">
+    <script src="product.js"></script>
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Mobile Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search by phone name...">
+            </div>
+            <div class="col-md-4">
+                <select id="brandFilter" class="form-control">
+                    <option value="all">All Brands</option>
+                    <option value="iphone">iPhone</option>
+                    <option value="realme">Realme</option>
+                    <option value="redmi">Redmi</option>
+                    <option value="vivo">Vivo</option>
+                    <option value="tecno">Tecno</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="productGrid">
+            <!-- iPhone -->
+            <div class="col product-card" data-brand="iphone">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 14 Pro</h5>
+                        <p class="card-text">$1099</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Realme -->
+            <div class="col product-card" data-brand="realme">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/seed/realme/512" class="card-img-top" alt="Realme GT Neo 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Realme GT Neo 5</h5>
+                        <p class="card-text">$599</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redmi -->
+            <div class="col product-card" data-brand="redmi">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/seed/redmi/512" class="card-img-top" alt="Redmi Note 12">
+                    <div class="card-body">
+                        <h5 class="card-title">Redmi Note 12</h5>
+                        <p class="card-text">$249</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vivo -->
+            <div class="col product-card" data-brand="vivo">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/seed/vivo/512" class="card-img-top" alt="Vivo X90 Pro">
+                    <div class="card-body">
+                        <h5 class="card-title">Vivo X90 Pro</h5>
+                        <p class="card-text">$999</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tecno -->
+            <div class="col product-card" data-brand="tecno">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/seed/tecno/512" class="card-img-top" alt="Tecno Phantom X2">
+                    <div class="card-body">
+                        <h5 class="card-title">Tecno Phantom X2</h5>
+                        <p class="card-text">$450</p>
+                    </div>
+                </div>
+            </div>
+                <!-- iPhone -->
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-card" data-brand="iphone">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/iphone/512" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">$1099</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>We are dedicated to providing the best solutions for our customers. Join us and explore endless possibilities.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="products.html" class="text-white">Products</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Business Street, City, Country</p>
+                    <p><i class="fas fa-phone"></i> +123-456-7890</p>
+                    <p><i class="fas fa-envelope"></i> contact@yourcompany.com</p>
+                    
+                    <h5>Follow Us</h5>
+                    <div>
+                        <a href="#" class="text-white mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white mr-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 Your Company. All rights reserved.</p>
+                    <p class="small">Designed with <i class="fas fa-heart text-danger"></i> by Your Team.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
